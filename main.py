@@ -56,5 +56,4 @@ while running:
 # finalization code
 close_canvas()
 
-
 # 깃 커밋 용도 주석처리
