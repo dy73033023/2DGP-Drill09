@@ -1,7 +1,6 @@
 from pico2d import *
 from boy import Boy
 from grass import Grass
-from grass2 import Grass2
 import game_world
 
 
@@ -24,9 +23,9 @@ def handle_events():
 def reset_world():
     global boy
 
-    grass = Grass()
+    grass = Grass(30)
     game_world.add_object(grass, 0) # 게임 월드에 잔디 객체 추가
-    grass = Grass2()
+    grass = Grass(10)
     game_world.add_object(grass, 2)
 
     boy = Boy()
@@ -56,3 +55,6 @@ while running:
     delay(0.01)
 # finalization code
 close_canvas()
+
+
+# 깃 커밋 용도 주석처리
